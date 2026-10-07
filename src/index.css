@@ -1,0 +1,376 @@
+@import "tailwindcss";
+
+/* =========================================================
+   NFT MARKETPLACE THEME
+========================================================= */
+
+:root {
+  --page-bg: #100c20;
+  --header-bg: #100c20;
+  --sidebar-bg: #0d0919;
+
+  --card-bg: #17132b;
+  --card-bg-2: #1d1833;
+
+  --border-color: #2c2645;
+
+  --text-primary: #ffffff;
+  --text-secondary: #a8a3bd;
+  --text-muted: #77718f;
+
+  --input-bg: #1d1833;
+  --input-border: #352e50;
+
+  --purple: #6d4bea;
+  --purple-hover: #7959ef;
+
+  --danger: #e63950;
+  --success: #43c23f;
+
+  --shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* =========================================================
+   LIGHT THEME
+========================================================= */
+
+html.light {
+  --page-bg: #f4f4f4;
+  --header-bg: #f4f4f4;
+  --sidebar-bg: #ffffff;
+
+  --card-bg: #ffffff;
+  --card-bg-2: #ffffff;
+
+  --border-color: #eeeeee;
+
+  --text-primary: #171717;
+  --text-secondary: #5f5f5f;
+  --text-muted: #929292;
+
+  --input-bg: #ffffff;
+  --input-border: #dcdcdc;
+
+  --purple: #6d4bea;
+  --purple-hover: #7959ef;
+
+  --danger: #e63950;
+  --success: #43c23f;
+
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: var(--page-bg);
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  background: var(--page-bg);
+  color: var(--text-primary);
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =========================================================
+   APP
+========================================================= */
+
+.app-theme {
+  min-height: 100vh;
+  background: var(--page-bg);
+  color: var(--text-primary);
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+/* =========================================================
+   REUSABLE THEME CLASSES
+========================================================= */
+
+.theme-page {
+  background: var(--page-bg);
+  color: var(--text-primary);
+}
+
+.theme-card {
+  background: var(--card-bg);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+  box-shadow: var(--shadow);
+}
+
+.theme-card-flat {
+  background: var(--card-bg);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.theme-text {
+  color: var(--text-primary);
+}
+
+.theme-secondary {
+  color: var(--text-secondary);
+}
+
+.theme-muted {
+  color: var(--text-muted);
+}
+
+.theme-border {
+  border-color: var(--border-color);
+}
+
+.theme-input {
+  background: var(--input-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--input-border);
+}
+
+.theme-input::placeholder {
+  color: var(--text-muted);
+}
+
+/* =========================================================
+   LIGHT MODE - EXISTING DARK PAGE BACKGROUNDS
+========================================================= */
+
+html.light .bg-\[\#100c20\] {
+  background-color: #f4f4f4 !important;
+}
+
+html.light .bg-\[\#0d0919\] {
+  background-color: #ffffff !important;
+}
+
+html.light .bg-\[\#0f0b1e\] {
+  background-color: #f4f4f4 !important;
+}
+
+html.light .bg-\[\#120e25\] {
+  background-color: #f4f4f4 !important;
+}
+
+/* =========================================================
+   LIGHT MODE - EXISTING DARK CARDS
+========================================================= */
+
+html.light .bg-\[\#17132b\],
+html.light .bg-\[\#18142d\],
+html.light .bg-\[\#1a1530\],
+html.light .bg-\[\#1d1833\],
+html.light .bg-\[\#211b39\],
+html.light .bg-\[\#221c3a\] {
+  background-color: #ffffff !important;
+}
+
+/* =========================================================
+   LIGHT MODE - BORDERS
+========================================================= */
+
+html.light .border-\[\#292342\],
+html.light .border-\[\#30294b\],
+html.light .border-\[\#332d4d\],
+html.light .border-\[\#352e50\],
+html.light .border-white\/10,
+html.light .border-white\/20 {
+  border-color: #eeeeee !important;
+}
+
+/* =========================================================
+   LIGHT MODE - TEXT
+========================================================= */
+
+html.light .text-white {
+  color: #171717;
+}
+
+html.light .text-gray-100,
+html.light .text-gray-200,
+html.light .text-gray-300,
+html.light .text-gray-400,
+html.light .text-gray-500 {
+  color: #666666 !important;
+}
+
+/* =========================================================
+   KEEP PURPLE BUTTONS CORRECT
+========================================================= */
+
+html.light .bg-\[\#6847e8\],
+html.light .bg-\[\#6c49e8\],
+html.light .bg-\[\#6d4bea\] {
+  background-color: #6d4bea !important;
+  color: #ffffff !important;
+}
+
+html.light .bg-\[\#6847e8\] .text-white,
+html.light .bg-\[\#6c49e8\] .text-white,
+html.light .bg-\[\#6d4bea\] .text-white {
+  color: #ffffff !important;
+}
+
+/* =========================================================
+   SEARCH INPUT
+========================================================= */
+
+.search-theme {
+  background: var(--input-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.search-theme::placeholder {
+  color: var(--text-muted);
+}
+
+/* =========================================================
+   PAGE CONTENT
+========================================================= */
+
+.page-content {
+  background: var(--page-bg);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+/* =========================================================
+   WHITE CARD
+========================================================= */
+
+.market-card {
+  background: var(--card-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.2s ease;
+}
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.market-table {
+  background: var(--card-bg);
+  color: var(--text-primary);
+}
+
+.market-table-row {
+  background: var(--card-bg);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.market-input {
+  width: 100%;
+  background: var(--input-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.market-input:focus {
+  border-color: var(--purple);
+}
+
+/* =========================================================
+   TRANSITION
+========================================================= */
+
+.theme-transition,
+.theme-transition * {
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease;
+}
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--page-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6d5ba5;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7b65c0;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 1023px) {
+  body {
+    overflow-x: hidden;
+  }
+}

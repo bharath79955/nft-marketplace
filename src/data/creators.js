@@ -1,0 +1,78 @@
+export const creators = [
+  {
+    id: 1,
+    name: "John Abraham",
+    username: "@johnabraham",
+    image: "/src/assets/images/creator.jpg",
+    followers: "12.5K",
+    artworks: 124,
+    verified: true,
+  },
+  {
+    id: 2,
+    name: "John Abraham",
+    username: "@johnabraham",
+    image: "/src/assets/images/creator.jpg",
+    followers: "10.8K",
+    artworks: 98,
+    verified: true,
+  },
+  {
+    id: 3,
+    name: "John Abraham",
+    username: "@johnabraham",
+    image: "/src/assets/images/profile.jpg",
+    followers: "8.4K",
+    artworks: 76,
+    verified: true,
+  },
+  {
+    id: 4,
+    name: "John Abraham",
+    username: "@johnabraham",
+    image: "/src/assets/images/creator.jpg",
+    followers: "7.9K",
+    artworks: 64,
+    verified: false,
+  },
+  {
+    id: 5,
+    name: "John Abraham",
+    username: "@johnabraham",
+    image: "/src/assets/images/profile.jpg",
+    followers: "6.7K",
+    artworks: 52,
+    verified: true,
+  },
+];
+
+export const followingCreators = [
+  {
+    id: "Papaya-1",
+    name: "Papaya",
+    username: "@papaya",
+    image: "/src/assets/images/creator.jpg",
+    verified: true,
+  },
+  {
+    id: "Papaya-2",
+    name: "Papaya",
+    username: "@papaya",
+    image: "/src/assets/images/creator.jpg",
+    verified: true,
+  },
+  {
+    id: "Papaya-3",
+    name: "Papaya",
+    username: "@papaya",
+    image: "/src/assets/images/profile.jpg",
+    verified: false,
+  },
+  {
+    id: "Papaya-4",
+    name: "Papaya",
+    username: "@papaya",
+    image: "/src/assets/images/creator.jpg",
+    verified: true,
+  },
+];

@@ -1,0 +1,28 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 64 64"
+  fill="none"
+>
+  <rect width="64" height="64" rx="16" fill="#6C4DF6"/>
+
+  <path
+    d="M32 10L49 28L32 54L15 28L32 10Z"
+    fill="white"
+    fill-opacity="0.95"
+  />
+
+  <path
+    d="M32 10L49 28L32 34L15 28L32 10Z"
+    fill="#DCD5FF"
+  />
+
+  <path
+    d="M15 28L32 34V54L15 28Z"
+    fill="#B9AEFF"
+  />
+
+  <path
+    d="M49 28L32 34V54L49 28Z"
+    fill="#8C79FF"
+  />
+</svg>
